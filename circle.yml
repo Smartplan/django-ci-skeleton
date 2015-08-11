@@ -1,0 +1,9 @@
+machine:
+  python:
+    version: 2.7.9
+dependencies:
+  override:
+    - pip install -r requirements/requirements.txt
+test:
+  override:
+    - python mysite/manage.py test
